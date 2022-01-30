@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: consolas;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+main {
+	position: relative;
+	min-width: 300px;
+	min-height: 400px;
+	/* background: #333; */
+	padding: 40px 30px;
+	border-radius: 20px;
+	box-shadow: 25px 25px 75px rgba(0,0,0,0.25),
+							10px 10px 70px rgba(0,0,0,0.25),
+				inset -5px -5px 15px rgba(0,0,0,0.25),
+				inset 5px 5px 15px rgba(0,0,0,0.25);
+}
+
+form {
+	position: relative;
+	display: grid;
+}
+
+form input[type="text"] {
+	position: relative;
+	grid-column: span 4;
+}
