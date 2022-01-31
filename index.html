@@ -30,8 +30,10 @@
 			<span onclick="calc.screen.value * -1"><strong>+/-</strong></span>
 			<span onclick="calc.screen.value+='0'"><strong>0</strong></span>
 			<span onclick="calc.screen.value+='.'"><strong>.</strong></span>
-			<span onclick="calc.screen.value+='='"><strong>=</strong></span>
+			<!-- <span onclick="document.calc.screen.value=eval(calc.screen.value)"><strong>=</strong></span> -->
+			<span onclick="calcular(calc.screen.value)"><strong>=</strong></span>
 		</form>
 	</main>
+	<script src="index.js"/>
 </body>
 </html>

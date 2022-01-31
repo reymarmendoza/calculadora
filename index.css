@@ -20,7 +20,6 @@ main {
 	position: relative;
 	min-width: 300px;
 	min-height: 400px;
-	/* background: #333; */
 	padding: 40px 30px;
 	border-radius: 20px;
 	box-shadow: 25px 25px 75px rgba(0,0,0,0.25),
@@ -37,7 +36,7 @@ form {
 form input[type="text"] {
 	position: relative;
 	grid-column: span 4;
-	height: 50px;
+	height: 75px;
 	width: calc(100% - 20px);
 	left: 10px;
 	border: none;
@@ -48,7 +47,7 @@ form input[type="text"] {
 	box-shadow: 0 0 0 2px rgba(0,0,0,0.75);
 	padding: 10px;
 	text-align: right;
-	font-size: 2rem;
+	font-size: 3rem;
 }
 
 form span {
@@ -59,8 +58,6 @@ form span {
 	height: 80px;
 	margin: 8px;
 	border-radius: 8px;
-	/* background: rgb(249,248,251);
-	background: linearn-gradient(180deg, rgba(249,248,251,1) 0%, rgba(250,250,250,1) 10%, rgba(235,235,235,1) 100%); */
 	background: linearn-gradient(180deg, #2f2f2f, #3f3f3f);
 	box-shadow: inset -8px 0px 8px rgba(0,0,0,0.15),
 							inset 0px -8px 8px rgba(0,0,0,0.25),
@@ -78,7 +75,6 @@ form span::before {
 	left: 4px;
 	bottom: 14px;
 	right: 12px;
-	/* background: linearn-gradient(90deg, rgba(249,248,251,1) 0%, rgba(250,250,250,1) 10%, rgba(235,235,235,1) 100%); */
 	background: linearn-gradient(90deg, #2d2d2d, #4d4d4d);
 	border-radius: 10px;
 	box-shadow: -5px -5px 15px rgba(0,0,0,0.15),
