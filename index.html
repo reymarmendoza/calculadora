@@ -10,28 +10,27 @@
 <body>
 	<main>
 		<form name="calc" action="">
-			<input type="text" name="screen" readonly>
+			<input type="text" name="screen" value="0" readonly>
 			<span onclick="calc.screen.value"><strong>His</strong></span>
-			<span onclick="calc.screen.value"><strong>Del</strong></span>
-			<span onclick="calc.screen.value=''"><strong>C</strong></span>
-			<span onclick="calc.screen.value+='/'"><strong>/</strong></span>
-			<span onclick="calc.screen.value+='7'"><strong>7</strong></span>
-			<span onclick="calc.screen.value+='8'"><strong>8</strong></span>
-			<span onclick="calc.screen.value+='9'"><strong>9</strong></span>
-			<span onclick="calc.screen.value+='*'"><strong id="star">*</strong></span>
-			<span onclick="calc.screen.value+='4'"><strong>4</strong></span>
-			<span onclick="calc.screen.value+='5'"><strong>5</strong></span>
-			<span onclick="calc.screen.value+='6'"><strong>6</strong></span>
-			<span onclick="calc.screen.value+='-'"><strong>-</strong></span>
-			<span onclick="calc.screen.value+='1'"><strong>1</strong></span>
-			<span onclick="calc.screen.value+='2'"><strong>2</strong></span>
-			<span onclick="calc.screen.value+='3'"><strong>3</strong></span>
-			<span onclick="calc.screen.value+='+'"><strong>+</strong></span>
-			<span onclick="calc.screen.value * -1"><strong>+/-</strong></span>
+			<span onclick="deleteLast()"><strong>Del</strong></span>
+			<span onclick="calc.screen.value='0'"><strong>C</strong></span>
+			<span onclick="division()"><strong>/</strong></span>
+			<span onclick="numButton(7)"><strong>7</strong></span>
+			<span onclick="numButton(8)"><strong>8</strong></span>
+			<span onclick="numButton(9)"><strong>9</strong></span>
+			<span onclick="multiplication()"><strong id="star">*</strong></span>
+			<span onclick="numButton(4)"><strong>4</strong></span>
+			<span onclick="numButton(5)"><strong>5</strong></span>
+			<span onclick="numButton(6)"><strong>6</strong></span>
+			<span onclick="substraction()"><strong>-</strong></span>
+			<span onclick="numButton(1)"><strong>1</strong></span>
+			<span onclick="numButton(2)"><strong>2</strong></span>
+			<span onclick="numButton(3)"><strong>3</strong></span>
+			<span onclick="addition()"><strong>+</strong></span>
+			<span onclick="negative()"><strong>+/-</strong></span>
 			<span onclick="calc.screen.value+='0'"><strong>0</strong></span>
 			<span onclick="calc.screen.value+='.'"><strong>.</strong></span>
-			<!-- <span onclick="document.calc.screen.value=eval(calc.screen.value)"><strong>=</strong></span> -->
-			<span onclick="calcular(calc.screen.value)"><strong>=</strong></span>
+			<span onclick="calcular()"><strong>=</strong></span>
 		</form>
 	</main>
 	<script src="index.js"/>
